@@ -1,3 +1,45 @@
+The system has the command format (it is required to upload to a server, due to the lack of a server, this plugin was not fully tested)
+It has a save in MongoDB or .json files (if the MONGO_URL environment variable is undefined it will use the jsons system.)
+
+It also has enough logic to generate summaries from the last one created or from scratch
+
+
+1) First you have to generate the .env with the following fields:
+
+
+generate .env with :
+
+SLACK_BOT_TOKEN="TOKEN BOT SLACK"
+SLACK_SIGNING_SECRET="SIGNING SECRET SLACK"
+CHAT_GPT_KEY="CHAT GTP KEY"
+CHANNEL_NAME="CHANNEL NAME TO MAKE SUMMARY"
+PORT=3000
+MONGO_URL="URL MONGO" // optional if you want to save summaries in mongo
+
+
+2) npm install
+
+
+for local test: you can use 
+ generateSummaryOffline(); /app.js
+
+3) to start -> npm start
+
+Also attached is a list of messages from which the summaries that remained in the repository were generated (messages.txt)
+
+
+
+
+
+
+//SPANISH ->
+el sistema cuenta con el formato de comando ( se requiere cargar en un servidor, por falta de servidor no se probo este complemento completamente)
+Cuenta con un guardado en MongoDB o archivos .json (si la variable de entorno MONGO_URL es undefined usara el sistema de jsons.)
+
+tambien cuenta con la logica suficiente como para generar resumenes a partir del ultimo creado o desde cero.
+Tambien se adjunta un listado de los mensajes del cual se generaron los resumenes que quedaron en el repositorio (messages.txt)
+
+
 //-------------------LEMON CHALLENGE----------------------------//
 
 // api que conecte con slack
@@ -6,20 +48,11 @@
 // agregar validaciones/funcionalidades 
     //1: largo del canal
     //2: resumenes por dia/ semana/ mes
-    //3: posible resumen desde el ultimo resumen ( no resumir algo que ya resumio )
+    //3: posible resumen desde el ultimo resumen ( no resumir algo que ya resumio ) --listo 
     //4:  que tambien incluya los de los hilos --LISTO
-    //5: que se pueda ejecutar con un comando
-    //6: que guarde el resumen en un file? o lo mande por slack. 
+    //5: que se pueda ejecutar con un comando -- en teoria esta. (no probado por falta de servidor)
+    //6: que guarde el resumen en un file /mongo ?  --listo
+         o lo mande por slack.  -- si es comando lo manda 
 
 
 //-------------------LEMON CHALLENGE----------------------------//
-
-
-
-
-generate env with :
-
-SLACK_BOT_TOKEN="TOKEN BOT SLACK"
-SLACK_SIGNING_SECRET="SIGNING SECRET SLACK"
-CHAT_GPT_KEY="CHAT GTP KEY"
-CHANNEL_NAME="CHANNEL NAME TO MAKE SUMMARY"

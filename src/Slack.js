@@ -1,5 +1,6 @@
 const { App } = require('@slack/bolt');
 require('dotenv').config();
+const ChatGpt = require('./ChatGpt');
 
 class Slack {
 
@@ -17,8 +18,8 @@ class Slack {
     }
 
     start = async () => {
-        this.app.start(process.env.PORT || 3000)
-        getChannel();
+        // this.app.start(process.env.PORT || 3000)
+        this.getChannel();
     };
 
     async getChannel() {
@@ -58,7 +59,7 @@ class Slack {
 
         }
     }
-    async findConversation(replies = false, channelName = this.nameChannel) {
+    async findConversation(replies = false, channelId = this.channel.id) {
         try {
             // Call the conversations.list method using the built-in WebClient
             const result = await this.app.client.conversations.list({
@@ -66,9 +67,9 @@ class Slack {
                 signingSecret: process.env.SLACK_SIGNING_SECRET
             });
 
-            for (const channel of result.channels) {
+            for (const channel of result.channels) { //todo can replace with find.
                 // console.log(channel.name + " " + channel.id);
-                if (channel.name == channelName) {
+                if (channel.id == channelId) {
 
 
                     if (await this.joinConversation(channel.id) == true) {
@@ -99,7 +100,7 @@ class Slack {
                             }
 
                             messages = messages.sort((a, b) => a.ts - b.ts);
-
+                            console.log(messages);
                             return messages;
 
                         } else {
@@ -206,6 +207,75 @@ class Slack {
         }
 
     }
+
+    async generateSummary(replies, all, channelId) {
+        let conversations = await this.findConversation(replies, channelId);
+        let finaltext = "";
+        let users = await this.getProfilesConversation(channelId);
+        let lasUserTalk = {};
+        let firstMessage = {};
+        let lastMessage = {};
+        for (let index = 0; index < conversations.length; index++) {
+            const mss = conversations[index];
+            // console.log(parseFloat(mss.ts) > parseFloat(all), parseFloat(mss.ts), parseFloat(all))
+            if (all == "all" || parseFloat(mss.ts) > parseFloat(all)) {
+                if (firstMessage?.text == undefined) {
+                    firstMessage = mss;
+                }
+                lastMessage = mss;
+                let user = users.find(x => x.userId == mss.user);
+                let msj = this.parseMessage(mss.text, true);
+                if (msj != "") {
+
+                    if (lasUserTalk?.userId == user.userId) { // acoplamos si sigue hablando el mismo usuario
+                        finaltext += ", " + msj + " ";
+                    } else {
+                        if (finaltext != "") {
+                            finaltext += "><";
+                        } else {
+                            finaltext += "<";
+                        }
+                        finaltext += user.name + " " + this.wordSay + " :" + msj + " ";
+                    }
+                    lasUserTalk = user;
+                }
+            }
+        }
+        if (finaltext.substr(finaltext.length - 1) != ">") {
+            finaltext += ">";
+        }
+        // console.log(finaltext, "finaltext")
+        // return;
+        if (finaltext != "") {
+
+            let content = await ChatGpt(this.contentSystem, finaltext);
+            console.log(content);
+            return { content: content.content, tsStart: firstMessage.ts, tsEnd: lastMessage.ts, channelId: channelId, replies, all, date: new Date() };
+        }
+        return { error: "error" };
+
+    }
+
+    async sendMessageUser(message, channelId) {
+        try {
+            // Call the conversations.list method using the built-in WebClient
+            const result = await this.app.client.chat.postMessage({
+                token: process.env.SLACK_BOT_TOKEN,
+                channel: channelId,
+                text: message,
+            });
+            // console.log(result.profile,"user");
+            return result;
+        }
+        catch (error) {
+            console.error(error, "sendMessageUser");
+            console.log(error?.data?.response_metadata)
+            return [];
+        }
+    }
+
+
+
 }
 
 

@@ -15,6 +15,7 @@ module.exports = async function (contentSystem, message) {
         let completion = await openai.createChatCompletion({
             model: "gpt-3.5-turbo",
             // model: "davinci",
+            temperature:1,
             messages: [{ role: "system", content: contentSystem }, { role: "user", content: message }],
         });
         console.log(completion.data);

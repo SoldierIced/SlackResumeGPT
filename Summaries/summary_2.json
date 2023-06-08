@@ -1,0 +1,10 @@
+{
+  "content": "Resumen:\n\n- Leandro Arroyo reporta problemas con el buscador y la descripción de los productos.\n- Nehuen Fortes se ofrece a revisarlo y soluciona el problema del buscador. En cuanto al rich text, identifica los cambios y los arregla en la versión actual.\n- Leandro recomienda crear una rama dev y otra prod para cada proyecto.\n- Leandro reporta errores en los links de pago de Colombia y Nehuen los revisa y soluciona el primero pero necesita más información para el segundo. \n- Leandro informa sobre un problema con la facturación en la web de Ecuador y Nehuen lo revisa y soluciona.\n- Nehuen no puede reunirse con Pedro en la reunión de las 13 porque tiene otra reunión con Juan.\n- Leandro informa sobre un problema de filtrado de precios en la página de productos y Raul lo resuelve al identificar una mala configuración del paginador.",
+  "tsStart": "1686236356.480109",
+  "tsEnd": "1686238937.772939",
+  "channelId": "C05B312K8KZ",
+  "replies": true,
+  "all": "1686235791.389349",
+  "date": "2023-06-08T18:49:56.794Z",
+  "id": 2
+}

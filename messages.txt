@@ -1,0 +1,478 @@
+[
+  {
+    type: 'message',
+    subtype: 'channel_join',
+    ts: '1686182240.772359',
+    user: 'U05B30WBP8X',
+    text: '<@U05B30WBP8X> se ha unido al canal'
+  },
+  {
+    type: 'message',
+    subtype: 'channel_join',
+    ts: '1686182405.594539',
+    user: 'U05BHD892KV',
+    text: '<@U05BHD892KV> se ha unido al canal'
+  },
+  {
+    client_msg_id: 'f42e9299-2574-42cb-82dc-d5801206dc9d',
+    type: 'message',
+    text: 'buenas',
+    user: 'U05B30WBP8X',
+    ts: '1686185583.278109',
+    blocks: [ [Object] ],
+    team: 'T05BHGRF55G'
+  },
+  {
+    client_msg_id: '0953ebb0-ba67-415f-8026-0fca9b89079e',
+    type: 'message',
+    text: 'prueba 1',
+    user: 'U05B30WBP8X',
+    ts: '1686185584.452799',
+    blocks: [ [Object] ],
+    team: 'T05BHGRF55G'
+  },
+  {
+    type: 'message',
+    subtype: 'channel_join',
+    ts: '1686186075.924259',
+    user: 'U05BW871XS5',
+    text: '<@U05BW871XS5> se ha unido al canal'
+  },
+  {
+    client_msg_id: '669c499f-a0b1-4182-8405-e20ea381b6ab',
+    type: 'message',
+    text: 'hoy voy a contar que estoy probando la logica',
+    user: 'U05B30WBP8X',
+    ts: '1686187881.263449',
+    blocks: [ [Object] ],
+    team: 'T05BHGRF55G'
+  },
+  {
+    client_msg_id: '7e0be0d5-592a-4182-ad2e-16014266b3f9',
+    type: 'message',
+    text: '<@U05BHGXRNP4> que te parece agregar la funcion de testing?',
+    user: 'U05B30WBP8X',
+    ts: '1686191960.857079',
+    blocks: [ [Object] ],
+    team: 'T05BHGRF55G'
+  },
+  {
+    type: 'message',
+    subtype: 'channel_join',
+    ts: '1686194037.364289',
+    user: 'U05C7R60T32',
+    text: '<@U05C7R60T32> se ha unido al canal'
+  },
+  {
+    client_msg_id: '5106e512-0065-42fc-91d2-a58fa371bf57',
+    type: 'message',
+    text: 'buenas, ya me encargue yo lo de testing, al final lo que hace es sumar y restar por el % que habiamos hablado',
+    user: 'U05C7R60T32',
+    ts: '1686194075.518599',
+    blocks: [ [Object] ],
+    team: 'T05BHGRF55G',
+    thread_ts: '1686194075.518599',
+    reply_count: 1,
+    reply_users_count: 1,
+    latest_reply: '1686194112.757539',
+    reply_users: [ 'U05B30WBP8X' ],
+    is_locked: false,
+    subscribed: false
+  },
+  {
+    client_msg_id: 'ed396819-1193-4d1b-9ded-65030a99fa7a',
+    type: 'message',
+    text: 'genial, mañana lo vemos bien en una call!',
+    user: 'U05B30WBP8X',
+    ts: '1686194112.757539',
+    blocks: [ [Object] ],
+    team: 'T05BHGRF55G',
+    thread_ts: '1686194075.518599',
+    parent_user_id: 'U05C7R60T32'
+  },
+  {
+    type: 'message',
+    text: '',
+    user: 'USLACKBOT',
+    channel: 'C05B312K8KZ',
+    room: {
+      id: 'R05BM8PTTAP',
+      name: '',
+      media_server: '',
+      created_by: 'U05BHD892KV',
+      date_start: 1686235791,
+      date_end: 1686235846,
+      participants: [],
+      participant_history: [Array],
+      participants_camera_on: [],
+      participants_camera_off: [],
+      participants_screenshare_on: [],
+      participants_screenshare_off: [],
+      canvas_thread_ts: '1686235791.389349',
+      thread_root_ts: '1686235791.389349',
+      channels: [Array],
+      is_dm_call: false,
+      was_rejected: false,
+      was_missed: false,
+      was_accepted: false,
+      has_ended: true,
+      background_id: 'THE_DREAM_OF_THE_FISH',
+      canvas_background: 'THE_DREAM_OF_THE_FISH',
+      is_prewarmed: false,
+      is_scheduled: false,
+      attached_file_ids: [],
+      media_backend_type: 'free_willy',
+      display_id: '',
+      external_unique_id: '88bafbb8-777c-4430-8dac-745763a30706',
+      app_id: 'A00',
+      call_family: 'huddle',
+      pending_invitees: {}
+    },
+    no_notifications: true,
+    permalink: 'https://lemonchallengetest.slack.com/call/R05BM8PTTAP',
+    subtype: 'huddle_thread',
+    ts: '1686235791.389349',
+    blocks: [ [Object] ],
+    team: 'T05BHGRF55G'
+  },
+  {
+    client_msg_id: '8d046e69-1ac0-40e2-80d1-1cd5f74a6200',
+    type: 'message',
+    text: 'Hola buen dia!\n' +
+      'Estan teniendo "problemas" con el buscador, al buscar un producto por el nombre si por ejemplo el producto se llama "mini pc 256gb" y se escribe "mini pc" lo encuentra pero si busca "mini 256gb" no le trae nada',
+    user: 'U05BHD892KV',
+    ts: '1686236356.480109',
+    blocks: [ [Object] ],
+    team: 'T05BHGRF55G',
+    edited: { user: 'U05BHD892KV', ts: '1686236407.000000' }
+  },
+  {
+    client_msg_id: 'a1aa911f-37a1-457f-b1b5-5104aeb885ea',
+    type: 'message',
+    text: 'Dale queres que lo vea yo o se encarga <@U05C7R60T32> ?',
+    user: 'U05B30WBP8X',
+    ts: '1686236428.494769',
+    blocks: [ [Object] ],
+    team: 'T05BHGRF55G',
+    thread_ts: '1686236428.494769',
+    reply_count: 4,
+    reply_users_count: 2,
+    latest_reply: '1686236594.688019',
+    reply_users: [ 'U05BHD892KV', 'U05B30WBP8X' ],
+    is_locked: false,
+    subscribed: false
+  },
+  {
+    client_msg_id: '99c6d71b-4260-49b5-8132-ca9ace5012c3',
+    type: 'message',
+    text: 'Si lo podes mirar vos mejor, que tenes mas fresca esta parte',
+    user: 'U05BHD892KV',
+    ts: '1686236492.802209',
+    blocks: [ [Object] ],
+    team: 'T05BHGRF55G',
+    thread_ts: '1686236428.494769',
+    parent_user_id: 'U05B30WBP8X'
+  },
+  {
+    client_msg_id: '08539a2b-3e2c-4aab-9ca7-4ec10e903f1f',
+    type: 'message',
+    text: 'Dale lo reviso, entonces hago que busque por palabras separadas y te aviso para que lo pruebes.',
+    user: 'U05B30WBP8X',
+    ts: '1686236540.839259',
+    blocks: [ [Object] ],
+    team: 'T05BHGRF55G',
+    thread_ts: '1686236428.494769',
+    parent_user_id: 'U05B30WBP8X'
+  },
+  {
+    client_msg_id: 'ea8ad5ce-195b-4d88-a79a-3293d1d42ee3',
+    type: 'message',
+    text: '<@U05BHD892KV> te comento que ya lo hice, podes fijarte si el servicio esta bien?',
+    user: 'U05B30WBP8X',
+    ts: '1686236561.985679',
+    blocks: [ [Object] ],
+    team: 'T05BHGRF55G',
+    thread_ts: '1686236428.494769',
+    parent_user_id: 'U05B30WBP8X'
+  },
+  {
+    client_msg_id: 'f764e40d-6d41-4c55-85ff-8044ce2e78f7',
+    type: 'message',
+    text: 'Genial',
+    user: 'U05BHD892KV',
+    ts: '1686236594.688019',
+    blocks: [ [Object] ],
+    team: 'T05BHGRF55G',
+    thread_ts: '1686236428.494769',
+    parent_user_id: 'U05B30WBP8X'
+  },
+  {
+    client_msg_id: '9f632386-a8f0-4b96-abbc-4b0bd9f4eeb7',
+    type: 'message',
+    text: 'Acaba de llegar otro email, al parecer las descripciones de los productos están perdiendo el formato, es un rich text pero se esta mostrando como un string plano.\n' +
+      'Se hizo algún tipo de cambio en ese campo? porque recuerdo que funcionaba bien hasta ahora',
+    user: 'U05BHD892KV',
+    ts: '1686236644.979959',
+    blocks: [ [Object] ],
+    team: 'T05BHGRF55G'
+  },
+  {
+    client_msg_id: 'd0c63d13-08fa-4d4b-a1d1-8e0fe8e57b22',
+    type: 'message',
+    text: '<@U05BHD892KV> yo estaba tocando el sistema de seguridad , porque me dijeron que habian metido script maliciosos en el servidor',
+    user: 'U05C7R60T32',
+    ts: '1686236711.588839',
+    blocks: [ [Object] ],
+    team: 'T05BHGRF55G'
+  },
+  {
+    client_msg_id: 'e3d6a14f-2d19-45fc-b710-d0a6397c24fc',
+    type: 'message',
+    text: 'Ya me puse a ver que onda ,ahi vi los cambios y ya los fixie para que no pase en esta version',
+    user: 'U05B30WBP8X',
+    ts: '1686236735.239629',
+    blocks: [ [Object] ],
+    team: 'T05BHGRF55G'
+  },
+  {
+    client_msg_id: '83cab177-e18f-4f5b-9c9c-799d13ff7a14',
+    type: 'message',
+    text: '<@U05BHD892KV> queres que lo suba al servidor?',
+    user: 'U05B30WBP8X',
+    ts: '1686236742.721799',
+    blocks: [ [Object] ],
+    team: 'T05BHGRF55G'
+  },
+  {
+    client_msg_id: '5aa23558-41f3-4ba0-bdc3-7e4c622bf8af',
+    type: 'message',
+    text: 'Espera a que lo vea <@U05C7R60T32> porque quizás algo de lo que modificaste afecte a lo que armo.',
+    user: 'U05BHD892KV',
+    ts: '1686236798.677539',
+    blocks: [ [Object] ],
+    team: 'T05BHGRF55G'
+  },
+  {
+    client_msg_id: '139b263e-28f5-4845-a21b-5ace41255e8b',
+    type: 'message',
+    text: 'si me había olvidado de crear una nueva rama para esto, termino y la creo',
+    user: 'U05C7R60T32',
+    ts: '1686236807.319769',
+    blocks: [ [Object] ],
+    team: 'T05BHGRF55G'
+  },
+  {
+    client_msg_id: '1bef043c-dceb-423b-ac11-ad6a8c9774c0',
+    type: 'message',
+    text: 'no pasa nada, es para un nuevo servidor',
+    user: 'U05C7R60T32',
+    ts: '1686236815.993359',
+    blocks: [ [Object] ],
+    team: 'T05BHGRF55G'
+  },
+  {
+    client_msg_id: 'fdef46be-7bf8-4e25-b6c5-4300b2ae3900',
+    type: 'message',
+    text: 'asique despues lo migro',
+    user: 'U05C7R60T32',
+    ts: '1686236821.821699',
+    blocks: [ [Object] ],
+    team: 'T05BHGRF55G'
+  },
+  {
+    client_msg_id: 'dfff3034-5f80-4db8-8a29-152fe89b284d',
+    type: 'message',
+    text: 'Por favor, a partir de ahora es INDISPENSABLE crear una rama dev y otra prod para cada proyecto, asi podemos evitar que surjan este tipo de problemas',
+    user: 'U05BHD892KV',
+    ts: '1686236856.020329',
+    blocks: [ [Object] ],
+    team: 'T05BHGRF55G'
+  },
+  {
+    client_msg_id: '59fe4f78-b0e0-4c1b-be03-353c97405d92',
+    type: 'message',
+    text: 'o al menos avisemos por este medio o email así estamos al tanto',
+    user: 'U05BHD892KV',
+    ts: '1686236897.935229',
+    blocks: [ [Object] ],
+    team: 'T05BHGRF55G'
+  },
+  {
+    client_msg_id: '3afdf72a-8660-4430-9640-00ecfe005c59',
+    type: 'message',
+    text: 'Sisi termino y lo creo',
+    user: 'U05C7R60T32',
+    ts: '1686236951.386909',
+    blocks: [ [Object] ],
+    team: 'T05BHGRF55G'
+  },
+  {
+    client_msg_id: '0b0e3ce8-51e0-4ff8-82fc-df53593b9b88',
+    type: 'message',
+    text: 'Bueno mientas tanto podes ver Leandro si ya esta todo funcionando bien? porque lo subi al servidor',
+    user: 'U05B30WBP8X',
+    ts: '1686236975.300719',
+    blocks: [ [Object] ],
+    team: 'T05BHGRF55G'
+  },
+  {
+    client_msg_id: '0cc07ac1-3ec6-479f-83c6-2c1471e79d98',
+    type: 'message',
+    text: 'Quedo perfecto! Muchas gracias',
+    user: 'U05BHD892KV',
+    ts: '1686236997.962369',
+    blocks: [ [Object] ],
+    team: 'T05BHGRF55G'
+  },
+  {
+    client_msg_id: '19123c1d-8ca8-4427-afd8-54e69242c6ee',
+    type: 'message',
+    text: 'Hola, Como están? Me reportan estos errores.\n' +
+      '\n' +
+      '1) En este link de pago generado en el sitio de Colombia no se está mostrando el menú de tarjetas de pago\n' +
+      '2) El link de pago generado en el BO de Colombia, los lleva a la prehome de la web, pareciera que pierde todo dato en la url',
+    user: 'U05BHD892KV',
+    ts: '1686237046.545629',
+    blocks: [ [Object] ],
+    team: 'T05BHGRF55G'
+  },
+  {
+    client_msg_id: 'e3934493-bdbe-4101-adac-59de23cdb2d1',
+    type: 'message',
+    text: 'Dale re viso',
+    user: 'U05B30WBP8X',
+    ts: '1686237083.006169',
+    blocks: [ [Object] ],
+    team: 'T05BHGRF55G'
+  },
+  {
+    client_msg_id: '7b531497-13ab-4bef-b709-6361bb44c65f',
+    type: 'message',
+    text: 'reviso*',
+    user: 'U05B30WBP8X',
+    ts: '1686237085.507009',
+    blocks: [ [Object] ],
+    team: 'T05BHGRF55G'
+  },
+  {
+    client_msg_id: '13aca845-da12-466b-a30d-4ba6531aca13',
+    type: 'message',
+    text: 'Sabes que revise y el punto 1 es porque la api del cliente responde mal, respecto a lo segundo podes pasarme la url por wpp? asi lo veo tambien?',
+    user: 'U05B30WBP8X',
+    ts: '1686237120.091209',
+    blocks: [ [Object] ],
+    team: 'T05BHGRF55G'
+  },
+  {
+    client_msg_id: 'ac4a7d58-91d8-4e26-a470-65e08623895c',
+    type: 'message',
+    text: 'Listo, avisame cuando lo revises por favor',
+    user: 'U05BHD892KV',
+    ts: '1686237261.293229',
+    blocks: [ [Object] ],
+    team: 'T05BHGRF55G'
+  },
+  {
+    client_msg_id: 'ac798d03-5055-49e0-85c4-8ee54dbf5be8',
+    type: 'message',
+    text: 'la url esta mal, ahi te mande por wpp como deberia ser',
+    user: 'U05B30WBP8X',
+    ts: '1686237282.904079',
+    blocks: [ [Object] ],
+    team: 'T05BHGRF55G'
+  },
+  {
+    client_msg_id: '032121e9-087d-4a9f-a566-d7608a957cf4',
+    type: 'message',
+    text: 'Les paso el caso otra cosa a revisar, en la web de ecuador, la facturación total mostrada en el BO esta funcionando mal, vemos la facturación en Analytics o en el motor y dice "U$S52,65" pero si vamos al BO muestra una facturación de "U$S32,65" en todos los casos tenemos 2 ventas.',
+    user: 'U05BHD892KV',
+    ts: '1686237352.244569',
+    blocks: [ [Object] ],
+    team: 'T05BHGRF55G'
+  },
+  {
+    client_msg_id: '672cb67f-56c9-49fc-967a-ba14c596c37b',
+    type: 'message',
+    text: 'Lo revise era un tema de tiendas y fechas en la bd, que estaba aplicandose mal, ya subi el cambio a los servidores',
+    user: 'U05B30WBP8X',
+    ts: '1686237611.417379',
+    blocks: [ [Object] ],
+    team: 'T05BHGRF55G'
+  },
+  {
+    client_msg_id: 'a8f19769-45c8-4364-94a7-ab10e0e8baa4',
+    type: 'message',
+    text: '<@U05B30WBP8X> vos vas a hablar con Pedro? en la reunion de las 13?',
+    user: 'U05C7R60T32',
+    ts: '1686237866.353239',
+    blocks: [ [Object] ],
+    team: 'T05BHGRF55G',
+    thread_ts: '1686237866.353239',
+    reply_count: 3,
+    reply_users_count: 2,
+    latest_reply: '1686237894.664669',
+    reply_users: [ 'U05B30WBP8X', 'U05C7R60T32' ],
+    is_locked: false,
+    subscribed: false
+  },
+  {
+    client_msg_id: 'a48a220d-c791-4356-a1c2-288e5e8b746a',
+    type: 'message',
+    text: 'No puedo tengo otra reunion con Juan',
+    user: 'U05B30WBP8X',
+    ts: '1686237880.949769',
+    blocks: [ [Object] ],
+    team: 'T05BHGRF55G',
+    thread_ts: '1686237866.353239',
+    parent_user_id: 'U05C7R60T32'
+  },
+  {
+    client_msg_id: 'ddfa5633-f737-4da6-b595-cc5d6c6db79e',
+    type: 'message',
+    text: 'Podes reunirte vos con el?',
+    user: 'U05B30WBP8X',
+    ts: '1686237887.641369',
+    blocks: [ [Object] ],
+    team: 'T05BHGRF55G',
+    thread_ts: '1686237866.353239',
+    parent_user_id: 'U05C7R60T32'
+  },
+  {
+    client_msg_id: '48bb10ef-2b5d-4d55-9d8a-1d9e7fb95275',
+    type: 'message',
+    text: 'Bueno',
+    user: 'U05C7R60T32',
+    ts: '1686237894.664669',
+    blocks: [ [Object] ],
+    team: 'T05BHGRF55G',
+    thread_ts: '1686237866.353239',
+    parent_user_id: 'U05C7R60T32'
+  },
+  {
+    client_msg_id: '1dc66da6-1e12-40d6-9084-07b29cfcbd60',
+    type: 'message',
+    text: 'Están reportando que el filtrado de productos por precios que ordena mal porque hay veces que en la pagina 2 quedan algunos productos que deberian estar en la primera pagina',
+    user: 'U05BHD892KV',
+    ts: '1686238228.464889',
+    blocks: [ [Object] ],
+    team: 'T05BHGRF55G'
+  },
+  {
+    client_msg_id: '7bd613c6-be19-441a-87ec-8eec104ba24a',
+    type: 'message',
+    text: '<@U05C7R60T32> ahi lo esta viendo (me dijo , estamos en un call)',
+    user: 'U05B30WBP8X',
+    ts: '1686238910.175089',
+    blocks: [ [Object] ],
+    team: 'T05BHGRF55G'
+  },
+  {
+    client_msg_id: '201aea8c-8524-4c5d-9a07-6ffcfcc9c6b8',
+    type: 'message',
+    text: 'Si ya lo resolvi , era un tema de mala configuracion del paginador',
+    user: 'U05C7R60T32',
+    ts: '1686238937.772939',
+    blocks: [ [Object] ],
+    team: 'T05BHGRF55G'
+  }
+]
