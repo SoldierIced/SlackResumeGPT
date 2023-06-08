@@ -6,7 +6,7 @@ const configuration = new Configuration({
 });
 const openai = new OpenAIApi(configuration);
 
-module.exports = async function (sayWord, message) {
+module.exports = async function (contentSystem, message) {
     if (!configuration.apiKey) {
         console.log("configuration no has api key (chatgpt)")
         return "";
@@ -15,9 +15,9 @@ module.exports = async function (sayWord, message) {
         let completion = await openai.createChatCompletion({
             model: "gpt-3.5-turbo",
             // model: "davinci",
-            messages: [{ role: "system", content: "Realiza un resumen de la siguiente conversacion, sabiendo que los mensajes de cada mensaje es <nombre usuario " + sayWord + " : >" }, { role: "user", content: message }],
+            messages: [{ role: "system", content: contentSystem }, { role: "user", content: message }],
         });
-
+        console.log(completion.data);
         return completion.data.choices[0].message;
     } catch (error) {
         console.log(error);

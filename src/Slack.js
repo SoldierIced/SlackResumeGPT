@@ -13,6 +13,7 @@ class Slack {
         this.users = [];
         this.messageAddChannel = "se ha unido al canal";
         this.wordSay = "dijo";
+        this.contentSystem = "Realiza un resumen de la siguiente conversacion, sabiendo que cada mensaje es <nombre usuario " + this.wordSay + " : > y seria ideal mostrarlo a modo de listado detallando de acciones de cada uno, identificando cual fue el problema y que soluciones se propusieron";
     }
 
     start = async () => {
@@ -57,7 +58,7 @@ class Slack {
 
         }
     }
-    async findConversation() {
+    async findConversation(replies = false, channelName = this.nameChannel) {
         try {
             // Call the conversations.list method using the built-in WebClient
             const result = await this.app.client.conversations.list({
@@ -67,7 +68,7 @@ class Slack {
 
             for (const channel of result.channels) {
                 // console.log(channel.name + " " + channel.id);
-                if (channel.name == this.nameChannel) {
+                if (channel.name == channelName) {
 
 
                     if (await this.joinConversation(channel.id) == true) {
@@ -78,8 +79,32 @@ class Slack {
                             channel: channel.id
                         })
                         if (messages?.messages.length > 0) {
-                            return messages.messages.sort((a, b) => a.ts - b.ts);
-                        } else { return []; }
+                            messages = messages.messages;
+
+                            if (replies == true) {
+                                let messaNew = [];
+                                for (let index = 0; index < messages.length; index++) {
+
+                                    if (messages[index]?.reply_count != undefined) {
+                                        replies = await this.getRepliesConversation(channel.id, messages[index].ts);
+                                        // console.log(replies, "replies");
+                                        replies.forEach(msj => {
+                                            messaNew.push(msj);
+                                        });
+                                    } else {
+                                        messaNew.push(messages[index]);
+                                    }
+                                }
+                                messages = messaNew;
+                            }
+
+                            messages = messages.sort((a, b) => a.ts - b.ts);
+
+                            return messages;
+
+                        } else {
+                            return [];
+                        }
                     }
                 }
                 return [];
@@ -91,7 +116,24 @@ class Slack {
             return [];
         }
     }
+    async getRepliesConversation(channelId, ts) {
+        try {
+            // Call the conversations.list method using the built-in WebClient
+            const result = await this.app.client.conversations.replies({
+                token: process.env.SLACK_BOT_TOKEN,
+                channel: channelId,
+                ts: ts,
+            });
+            // console.log(result.profile,"user");
+            return result.messages;
+        }
+        catch (error) {
+            console.error(error, "getRepliesConversation");
+            console.log(error?.data?.response_metadata)
+            return [];
+        }
 
+    }
     async getMembersConversation(channelId) {
         try {
             // Call the conversations.list method using the built-in WebClient
